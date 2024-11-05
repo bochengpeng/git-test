@@ -1,3 +1,5 @@
+package com.nhlstenden;
+
 public class Student
 {
     private String name;
