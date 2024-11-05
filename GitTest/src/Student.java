@@ -21,4 +21,9 @@ public class Student
     {
         return 0;
     }
+
+    public void studentHard()
+    {
+        this.setName("tom");
+    }
 }
