@@ -128,12 +128,4 @@ public class Firedepartment
             }
         }
     }
-
-    public void reportIncident(String description, int priority, double estimatedWaterLevel)
-    {
-        Emergency emergency = new Emergency(String description, int priority, double estimatedWaterLevel);
-        this.emergencies.add(emergency);
-        this.assignFirefighter(emergency);
-        this.deployFirefighterAndTruck(emergency);
-    }
 }
