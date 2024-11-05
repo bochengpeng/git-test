@@ -1,6 +1,7 @@
 public class Student
 {
     private String name;
+    private int age;
 
     public Student(String name)
     {
@@ -19,7 +20,12 @@ public class Student
 
     public int getAge()
     {
-        return 0;
+        return this.age;
+    }
+
+    public void setAge(int age)
+    {
+        this.age = age;
     }
 
     public void studentHard()
