@@ -28,12 +28,7 @@ public class Pepper extends Vegetable implements Saleable
             this.sizeInCm += 0;
         }
 
-        this.sizeInCm += (lux * CM_PER_LUX + mm * CM_PER_MM);
-
-        if (this.getSizeInCm() >= 7)
-        {
-            this.setStatus(Status.READY_TO_HARVEST);
-        }
+        super.generalGrowth(lux, mm);
     }
 
     @Override

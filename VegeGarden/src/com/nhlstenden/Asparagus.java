@@ -21,12 +21,7 @@ public class Asparagus extends Vegetable implements Saleable
             this.setStatus(Status.DESTROYED);
         }
 
-        this.sizeInCm += ( lux * CM_PER_LUX + mm * CM_PER_MM );
-
-        if (this.getSizeInCm() >= 20)
-        {
-            this.setStatus(Status.READY_TO_HARVEST);
-        }
+        super.generalGrowth(lux, mm);
     }
 
     @Override

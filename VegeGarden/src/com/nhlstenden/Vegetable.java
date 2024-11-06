@@ -79,5 +79,15 @@ public abstract class Vegetable
         this.status = status;
     }
 
+    public void generalGrowth(int lux, int mm)
+    {
+        this.sizeInCm += ( lux * this.cmPerLux + mm * this.cmPerMillimeter );
+
+        if (this.getSizeInCm() >= this.ripeLength)
+        {
+            this.setStatus(Status.READY_TO_HARVEST);
+        }
+    }
+
     public abstract void grow(int lux, int mm, int amountOfDays);
 }
